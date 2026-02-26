@@ -1,51 +1,231 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="/styles/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mí</title>
+    <title>Sobre mí - Juan Acosta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <!--Primer bloque-->
-    <h1>Juan Manuel Acosta</h1>
     <header>
-        <nav aria-label="Main navigation">
+        <nav>
             <a href="index.html" class="nav-link">Inicio</a>
             <a href="sobremi.html" class="nav-link">Sobre mí</a>
             <a href="contac.html" class="nav-link">Contacto</a>
         </nav>
     </header>
-<!--segundo bloque-->
+
     <section id="sobre-mi">
         <div class="container">
-            <h2>Sobre mí</h2>
-            <img src="/img/yo.jpg" alt="Foto" class="foto-redonda">
-            <div class="ubicación flex-container">
-                <h2>Puerto Madryn Chubut Argentina</h2>
+            <h2>Sobre mi</h2>
+            <img src="/img/yo.jpg" alt="Juan Acosta" class="foto-redonda">
+            
+            <div class="flex-container">
+                <h3>Juan Manuel Acosta</h3>
                 <div class="ubicacion-imagen">
                     <img src="https://images.vexels.com/media/users/3/136298/isolated/preview/e1584dc07a66af79a4285129d5a179b3-icono-basico-de-ubicacion.png" alt="ubicación" class="ubicacion-icono">
                 </div>
             </div>
-             <p>Hola Soy Juan Manuel Acosta, un apasionado desarrollador con amplia experiencia en la creación de sitios web personalizados. Originario de Puerto Deseado, actualmente estoy inmerso en mis estudios en la Universidad San Juan Bosco de la Patagonia "UNPSJB", donde estoy cursando la Licenciatura en Informática. Siempre estoy dispuesto a aprender nuevas tecnologías, y constantemente busco oportunidades para mejorar mis habilidades y conocimientos.</p>
-            <!--otro bloque-->
-            <h4>Mis Redes</h4>
-            <div class="contenedor">
-                <div class="image-text-container">
-                    <img src="/img/github.png" alt="Imagen 1" class="big-image">
-                    <div class="text-container">
-                        <p><a href="https://github.com/Juanmaacosta1?tab=repositories" target="_blank">Github</a></p>
+            <p style="text-align: center; margin-bottom: 30px;">Puerto Madryn, Chubut, Argentina</p>
+            
+            <div style="background: rgba(0,255,65,0.05); padding: 30px; border-radius: 10px;">
+                <p style="font-size: 1.1em; line-height: 1.8;">Estudiante de la Licenciatura en Informática en la Universidad Nacional de la Patagonia San Juan Bosco (UNPSJB), apasionado por la ciberseguridad y el desarrollo. Actualmente profundizando mis conocimientos en seguridad informática, participando en CTFs y explorando el fascinante mundo del hacking ético. Siempre en búsqueda de nuevos desafíos y oportunidades para aprender y crecer en el campo de la tecnología.</p>
+            </div>
+            <div style="margin-top: 50px;">
+                <h3>_habilidades</h3>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h4>Lenguajes</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>SQL</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="image-text-container">
-                    <img src="/img/linke.png" alt="Imagen 2"class="small-image">
-                    <div class="text-container">
-                        <p><a href="https://www.linkedin.com/in/juan-acosta-a304b1283/" target="_blank">Linkedin</a></p>
+                    <div class="skill-category">
+                        <h4>Web</h4>
+                        <ul>
+                            <li>HTML5 & CSS3</li>
+                            <li>Flask</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Bases de Datos</h4>
+                        <ul>
+                            <li>PostgreSQL</li>
+                            <li>pgAdmin</li>
+                            <li>SQL (General)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Ciberseguridad</h4>
+                        <ul>
+                            <li>Kali Linux</li>
+                            <li>CTF Enthusiast</li>
+                            <li>VirtualBox</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Herramientas</h4>
+                        <ul>
+                            <li>Git & GitHub</li>
+                            <li>VS Code</li>
+                            <li>Junit</li>
+                            <li>Terminal</li>
+                        </ul>
                     </div>
                 </div>
             </div>
+
+            <!-- ===== TRYHACKME ===== -->
+            <div style="margin-top: 50px;">
+                <h3>_tryhackme</h3>
+                <div class="skills-container">
+                    <div class="skill-category" style="grid-column: span 2;">
+                        <h4>Estadísticas de TryHackMe</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-top: 20px;">
+                            <div style="text-align: center; padding: 20px; background: rgba(0,255,65,0.03); border-radius: 10px;">
+                                <p style="color: var(--primary); font-size: 2em; font-weight: bold;">40%</p>
+                                <p style="color: var(--text);">Top ⬆️</p>
+                            </div>
+                            <div style="text-align: center; padding: 20px; background: rgba(0,255,65,0.03); border-radius: 10px;">
+                                <p style="color: var(--primary); font-size: 2em; font-weight: bold;">11</p>
+                                <p style="color: var(--text);">Rooms</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div style="text-align: center; margin-top: 30px;">
+                           <a href="https://github.com/Juanmaacosta1/ctf-writeups" target="_blank" 
+                                   style="color: var(--secondary); text-decoration: none; border-bottom: 1px dashed var(--secondary);">
+                                   repositorio de Github ↗
+                                </a>
+                            <p style="margin-top: 15px;">
+                                <a href="https://tryhackme.com/p/acostajuanma854" target="_blank" 
+                                   style="color: var(--secondary); text-decoration: none; border-bottom: 1px dashed var(--secondary);">
+                                   Ver perfil completo en TryHackMe ↗
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             
-        </div>
+
+            <!-- ===== SECCIÓN DE PROYECTOS ===== -->
+            <div style="margin-top: 50px;">
+                <h3>_proyectos_destacados</h3>
+                <div class="conta" style="margin-top: 30px;">
+                    
+                    <!-- Proyecto 1: Aplicación Flask con PostgreSQL POKEDEX -->
+                    <div class="servicio">
+                        <img src="/img/flask.png" alt="Flask + PostgreSQL" onerror="this.src='https://via.placeholder.com/300x200/0a0a0a/00ff41?text=Flask+App'">
+                        <div class="contenido-servicio">
+                            <h4>App Flask + PostgreSQL</h4>
+                            <p>Pokédex Web – Sistema de Gestión Pokémon Aplicación web desarrollada con Flask + PostgreSQL que funciona como una enciclopedia digital Pokémon. Permite visualizar, organizar y analizar información detallada de distintas especies junto a sus estadísticas.</p>
+                            <div style="margin-top: 15px;">
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">Python</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">Flask</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">PostgreSQL</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">pgAdmin</span>
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <a href="https://github.com/Juanmaacosta1/Pokedex" target="_blank" style="color: var(--primary);">Ver repositorio ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2: Puntero Interactivo para el Mouse -->
+                    <div class="servicio">
+                        <img src="/img/puntero.PNG" alt="Puntero JS" onerror="this.src='https://via.placeholder.com/300x200/0a0a0a/00b8ff?text=Puntero+JS'">
+                        <div class="contenido-servicio">
+                            <h4>🖱️ Puntero Interactivo para el Mouse</h4>
+                            <p>Efecto visual interactivo que modifica el comportamiento del cursor del mouse dentro de la página web, creando una experiencia dinámica y moderna para el usuario.</p>
+                            <div style="margin-top: 15px;">
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">HTML5</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">JS</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">CSS</span>
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <a href="https://github.com/Juanmaacosta1/puntero-para-el-mouse" target="_blank" style="color: var(--primary);">Ver repositorio ↗</a>
+                            </div>
+                            <div style="margin-top: 5px;">
+                                <a href="https://juanmaacosta1.github.io/puntero-para-el-mouse/" target="_blank" style="color: var(--primary);">Ver ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3:  Reservas Online -->
+                    <div class="servicio">
+                        <img src="/img/roka.PNG" alt="Java Biblioteca" onerror="this.src='https://via.placeholder.com/300x200/0a0a0a/00ff41?text=Java+App'">
+                        <div class="contenido-servicio">
+                            <h4>🍽️ La Roka – Sistema de Reservas Online</h4>
+                            <p>Permite a los clientes reservar una mesa de forma rápida desde el celular o computadora, sin llamadas ni complicaciones.</p>
+                            <div style="margin-top: 15px;">
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">HTML5</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">CSS3</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">API de WhatsApp mediante enlace directo</span>
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <a href="https://github.com/Juanmaacosta1/la-roka-formulario" target="_blank" style="color: var(--primary);">Ver repositorio ↗</a>
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <a href="https://la-roka-reservas.netlify.app/" target="_blank" style="color: var(--primary);">Ver ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 4: juego -->
+                    <div class="servicio">
+                        <img src="/img/pong.jpg" alt="Analizador de Red" onerror="this.src='https://via.placeholder.com/300x200/0a0a0a/00b8ff?text=Network+Analyzer'">
+                        <div class="contenido-servicio">
+                            <h4>🕹️ Pong – Juego JN</h4>
+                            <p>Recreación del clásico Pong desarrollada con JavaScript y HTML5. El jugador controla una paleta e intenta impedir que la pelota atraviese su lado mientras anota puntos contra su rival.</p>
+                            <div style="margin-top: 15px;">
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">html</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">CSS3</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">JS</span>
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <a href="https://github.com/Juanmaacosta1/pong" target="_blank" style="color: var(--primary);">Ver repositorio ↗</a>
+                            </div>
+                             <div style="margin-top: 20px;">
+                                <a href="https://juanmaacosta1.github.io/pong/" target="_blank" style="color: var(--primary);">Ver↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+
+            <!-- ===== REDES SOCIALES ===== -->
+            <h3 style="margin-top: 50px;">_redes</h3>
+            <div class="contenedor">
+                <div class="image-text-container">
+                    <img src="/img/github.png" alt="GitHub">
+                    <div class="text-container">
+                        <p><a href="https://github.com/Juanmaacosta1" target="_blank">GitHub</a></p>
+                    </div>
+                </div>
+                <div class="image-text-container">
+                    <img src="/img/linke.png" alt="LinkedIn">
+                    <div class="text-container">
+                        <p><a href="https://www.linkedin.com/in/juan-acosta-a304b1283/" target="_blank">LinkedIn</a></p>
+                    </div>
+                </div>
+                <div class="image-text-container">
+                    <img src="https://tryhackme.com/img/favicon.png" alt="TryHackMe" style="width: 50px; height: 50px; filter: invert(1);">
+                    <div class="text-container">
+                        <p><a href="https://tryhackme.com/p/acostajuanma854" target="_blank">TryHackMe</a></p>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </section>
 </body>
 </html>
