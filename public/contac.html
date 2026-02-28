@@ -1,35 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="../css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto</title>
+    <title>Contacto - Juan Acosta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <h1>Juan Manuel Acosta</h1>
     <header>
         <nav aria-label="Main navigation">
             <a href="../index.html" class="nav-link">Inicio</a>
             <a href="sobremi.html" class="nav-link">Sobre mí</a>
-            <a href="contac.html" class="nav-link">Contacto</a>
+            <a href="contac.html" class="nav-link active" aria-current="page">Contacto</a>
         </nav>
     </header>
-    <div>
-        <h2>Contacto</h2>
-    <p class="texto">Vamos a Crear Algo Increíble
-        Estoy ansioso por escuchar sobre tu proyecto y explorar cómo puedo ayudarte a hacerlo realidad. No dudes en contactarme para discutir tus ideas y ver cómo podemos trabajar juntos para crear una solución digital que marque la diferencia.</p>
-    </div>
-    <h2>Complete el siguiente formulario</h2>
-    <form class="form">
-        <div class="input-group">
-            <input type="email" id="gmail" name="gmail" placeholder="Ingrese su Gmail" required>
-        </div>
-        <div class="input-group">
-            <input type="text" id="text" name="text" placeholder="Escriba un texto" required>
-        </div>
-        <button type="submit">Enviar</button>
-    </form>
 
+    <main id="contacto-main">
+        <div class="container contacto-wrapper">
+            <div class="contacto-info">
+                <h2>_conectemos</h2>
+                <p class="texto-lead">¿Tienes un proyecto en mente? ¿Quieres colaborar o simplemente hablar sobre tecnología y ciberseguridad? Estoy a solo un mensaje de distancia.</p>
+                
+                <div class="info-item">
+                    <span class="info-icon">📧</span>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="acostajuanma854@gmail.com">acostajuanma854@gmail.com</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <h4>Ubicación</h4>
+                        <p>Puerto Madryn, Chubut, Argentina</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">💬</span>
+                    <div>
+                        <h4>Redes</h4>
+                        <div class="social-links-contact">
+                            <a href="https://github.com/Juanmaacosta1" target="_blank" aria-label="GitHub">GitHub</a> /
+                            <a href="https://www.linkedin.com/in/juan-acosta-a304b1283/" target="_blank" aria-label="LinkedIn">LinkedIn</a> /
+                            <a href="https://tryhackme.com/p/acostajuanma854" target="_blank" aria-label="TryHackMe">TryHackMe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacto-formulario">
+                <h2>_escribime</h2>
+                <form class="form" action="#" method="POST">
+                    <div class="input-group">
+                        <label for="nombre" class="sr-only">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="asunto" class="sr-only">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Asunto">
+                    </div>
+                    <div class="input-group">
+                        <label for="mensaje" class="sr-only">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Tu mensaje..." required></textarea>
+                    </div>
+                    <button type="submit" class="button">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h4>"Todos los derechos reservados © 2026 - Juan Manuel Acosta"</h4>
+    </footer>
 </body>
 </html>
