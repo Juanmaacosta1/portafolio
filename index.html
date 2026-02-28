@@ -3,55 +3,392 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Acosta | Estudiante de Informática & Ciberseguridad</title>
+    <title>Sobre mí - Juan Acosta | Estudiante de Informática & Ciberseguridad</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="public/sobremi.html"class="nav-link">Sobre mí</a>
-            <a href="public/contac.html"class="nav-link">Contacto</a>
+            <a href="../index.html" class="nav-link">Inicio</a>
+            <a href="sobremi.html" class="nav-link active">Sobre mí</a>
+            <a href="contac.html" class="nav-link">Contacto</a>
         </nav>
     </header>
 
-    <section id="hero">
-        <h1>Juan Manuel Acosta</h1>
-        <h2>Estudiante de Informática</h2>
-        <h3 class="typing-text">Apasionado por la Ciberseguridad</h3>
-        <button class="button" onclick="location.href='public/contac.html'">contactar</button>
-    </section>
+    <section id="sobre-mi">
+        <div class="container">
+            <h2>Sobre mi</h2>
+            <img src="../img/yo.jpg" alt="Juan Acosta" class="foto-redonda" onerror="this.src='https://via.placeholder.com/200x200/0a0a0a/00ff41?text=Juan+Acosta'">
+            
+            <div class="flex-container">
+                <h3>Juan Manuel Acosta</h3>
+                <div class="ubicacion-imagen">
+                    <img src="https://images.vexels.com/media/users/3/136298/isolated/preview/e1584dc07a66af79a4285129d5a179b3-icono-basico-de-ubicacion.png" alt="ubicación" class="ubicacion-icono">
+                </div>
+            </div>
+            <p style="text-align: center; margin-bottom: 30px;">Puerto Madryn, Chubut, Argentina</p>
+            
+            <div style="background: rgba(0,255,65,0.05); padding: 30px; border-radius: 10px;">
+                <p style="font-size: 1.1em; line-height: 1.8;">Estudiante de la Licenciatura en Informática en la Universidad Nacional de la Patagonia San Juan Bosco (UNPSJB), apasionado por la ciberseguridad y el desarrollo. Actualmente profundizando mis conocimientos en seguridad informática, participando en CTFs y explorando el fascinante mundo del hacking ético. Siempre en búsqueda de nuevos desafíos y oportunidades para aprender y crecer en el campo de la tecnología.</p>
+            </div>
 
-    <section id="mis-servicios">
-        <h2>_mis servicios</h2>
-        <div class="conta">
-            <div class="servicio">
-                <div class="contenido-servicio">
-                    <h4>Desarrollo Full Stack</h4>
-                    <p>Aplicaciones web completas con Python, Flask, HTML5, CSS3 y bases de datos SQL. Enfocado en código limpio y buenas prácticas.</p>
-                </div>
-            </div>
-            <div class="servicio">
+            <!-- ===== SECCIÓN DE CERTIFICACIONES Y FORMACIÓN PROFESIONAL ===== -->
+            <div style="margin-top: 80px;">
                 
-                <div class="contenido-servicio">
-                    <h4>Ciberseguridad</h4>
-                    <p>Entusiasta de la seguridad informática, con experiencia en Kali Linux, CTFs, y fundamentos de ethical hacking.</p>
+                <h3 class="section-title-glow">_certificaciones_profesionales</h3>
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Certificaciones</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">16+</div>
+                        <div class="stat-label">Horas de formación</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">2026</div>
+                        <div class="stat-label">Última certificación</div>
+                    </div>
+                </div>
+                
+                <div class="cert-grid-modern">
+                    
+                    <!-- CERTIFICADO 1: CISCO - Introducción a la Ciberseguridad -->
+                    <div class="cert-card-premium">
+                        <div class="cert-image-container">
+                            <img src="https://images.credly.com/images/44e32e0d-c2c0-4752-8f89-36c6a4afb4f9/cisco.png" 
+                                 alt="Cisco Networking Academy"
+                                 onerror="this.src='https://via.placeholder.com/400x200/0a0a0a/00ff41?text=Cisco+Academy'">
+                            <div class="cert-badge-issuer">CISCO</div>
+                        </div>
+                        <div class="cert-content-premium">
+                            <div class="cert-header-premium">
+                                <h4>Introducción a la Ciberseguridad</h4>
+                                <span class="cert-year">2026</span>
+                            </div>
+                            <div class="cert-issuer-premium">
+                                Cisco Networking Academy
+                            </div>
+                            <p class="cert-description-premium">
+                                Fundamentos de seguridad informática, análisis de amenazas, principios CIA, 
+                                criptografía básica y buenas prácticas en ciberseguridad empresarial.
+                            </p>
+                            <div class="cert-skills-premium">
+                                <span class="skill-badge">Ciberseguridad</span>
+                                <span class="skill-badge">Redes</span>
+                                <span class="skill-badge">Ethical Hacking</span>
+                                <span class="skill-badge">Criptografía</span>
+                            </div>
+                            <div class="cert-footer-premium">
+                                <span class="cert-id-premium">ID: 1e492a70-240b-4495</span>
+                                <div class="cert-links">
+                                    <a href="#" class="cert-link-btn" onclick="verCertificado('cisco')" title="Vista previa">👁️</a>
+                                    <a href="../pdf/Introduction_to_Cybersecurity_certificate_acostajuanma854-gmail-com_1e492a70-240b-4495-8d4e-6a45bfb1d2a9.pdf" target="_blank" class="cert-link-pdf" title="Descargar PDF">📄</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CERTIFICADO 2: JUNIOR ACHIEVEMENT -->
+                    <div class="cert-card-premium">
+                        <div class="cert-image-container">
+                            <img src="https://pbs.twimg.com/profile_images/1567307269395030016/Z6UKkY7d_400x400.jpg" 
+                                 alt="Junior Achievement Argentina"
+                                 onerror="this.src='https://via.placeholder.com/400x200/0a0a0a/00b8ff?text=JA+Argentina'">
+                            <div class="cert-badge-issuer">JA</div>
+                        </div>
+                        <div class="cert-content-premium">
+                            <div class="cert-header-premium">
+                                <h4>Yo puedo programar</h4>
+                                <span class="cert-year">2024</span>
+                            </div>
+                            <div class="cert-issuer-premium">
+                                Junior Achievement Argentina
+                            </div>
+                            <p class="cert-description-premium">
+                                Programa intensivo de 16 horas en fundamentos de programación, lógica computacional, 
+                                desarrollo web y metodologías ágiles para proyectos tecnológicos.
+                            </p>
+                            <div class="cert-skills-premium">
+                                <span class="skill-badge">Lógica</span>
+                                <span class="skill-badge">Algoritmos</span>
+                                <span class="skill-badge">HTML/CSS</span>
+                                <span class="skill-badge">Metodologías Ágiles</span>
+                            </div>
+                            <div class="cert-footer-premium">
+                                <span class="cert-id-premium">DNI: 44753541 | 05/07/2024</span>
+                                <div class="cert-links">
+                                    <a href="#" class="cert-link-btn" onclick="verCertificado('ja')">👁️</a>
+                                    <a href="../pdf/Certificado Yo puedo programar - Juan Acosta.pdf" target="_blank" class="cert-link-pdf">📄</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CERTIFICADO 3: TODOCODE -->
+                    <div class="cert-card-premium">
+                        <div class="cert-image-container">
+                            <img src="https://todocodeacademy.com/wp-content/uploads/2023/02/cropped-favicon-32x32-1.png" 
+                                 alt="TodoCode Academy"
+                                 onerror="this.src='https://via.placeholder.com/400x200/0a0a0a/ff00ff?text=TodoCode+Academy'">
+                            <div class="cert-badge-issuer">TODOCODE</div>
+                        </div>
+                        <div class="cert-content-premium">
+                            <div class="cert-header-premium">
+                                <h4>Desarrollo Web: HTML y CSS</h4>
+                                <span class="cert-year">2025</span>
+                            </div>
+                            <div class="cert-issuer-premium">
+                                TodoCode Academy
+                            </div>
+                            <p class="cert-description-premium">
+                                Curso completo de desarrollo web frontend: HTML5 semántico, CSS3 avanzado, 
+                                flexbox, grid, animaciones y diseño responsive profesional.
+                            </p>
+                            <div class="cert-skills-premium">
+                                <span class="skill-badge">HTML5</span>
+                                <span class="skill-badge">CSS3</span>
+                                <span class="skill-badge">Flexbox</span>
+                                <span class="skill-badge">Grid</span>
+                                <span class="skill-badge">Responsive</span>
+                            </div>
+                            <div class="cert-footer-premium">
+                                <span class="cert-id-premium">Credencial: HTML-CSS-WE3</span>
+                                <div class="cert-links">
+                                    <a href="https://todocodeacademy.com/certificate/certificado-html-y-css-we3/" target="_blank" class="cert-link-btn" title="Ver certificado online">🌐</a>
+                                    <a href="#" class="cert-link-pdf" onclick="alert('Descarga disponible pronto')" title="PDF próximamente">📄</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificaciones futuras (comentadas) -->
+                <!-- 
+                <div class="cert-card-premium">
+                    <div class="cert-image-container">
+                        <img src="ruta-imagen" alt="Certificado futuro">
+                        <div class="cert-badge-issuer">PRÓXIMAMENTE</div>
+                    </div>
+                    <div class="cert-content-premium">
+                        <h4>Ethical Hacking Profesional</h4>
+                        <p class="cert-description-premium">En progreso...</p>
+                    </div>
+                </div>
+                -->
+            </div>
+
+            <!-- ===== HABILIDADES TÉCNICAS ===== -->
+            <div style="margin-top: 50px;">
+                <h3>_habilidades</h3>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h4>Lenguajes</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Web</h4>
+                        <ul>
+                            <li>HTML5 & CSS3</li>
+                            <li>Flask</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Bases de Datos</h4>
+                        <ul>
+                            <li>PostgreSQL</li>
+                            <li>pgAdmin</li>
+                            <li>SQL (General)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Ciberseguridad</h4>
+                        <ul>
+                            <li>Kali Linux</li>
+                            <li>CTF Enthusiast</li>
+                            <li>VirtualBox</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Herramientas</h4>
+                        <ul>
+                            <li>Git & GitHub</li>
+                            <li>VS Code</li>
+                            <li>Junit</li>
+                            <li>Terminal</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="servicio">
-                <div class="contenido-servicio">
-                    <h4>Formación Académica</h4>
-                    <p>Estudiante de Licenciatura en Informática en UNPSJB, aprendiendo constantemente nuevas tecnologías y metodologías.</p>
+
+            <!-- ===== TRYHACKME ===== -->
+            <div style="margin-top: 50px;">
+                <h3>_tryhackme</h3>
+                <div class="skills-container">
+                    <div class="skill-category" style="grid-column: span 2;">
+                        <h4>Estadísticas de TryHackMe</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-top: 20px;">
+                            <div style="text-align: center; padding: 20px; background: rgba(0,255,65,0.03); border-radius: 10px;">
+                                <p style="color: var(--primary); font-size: 2em; font-weight: bold;">40%</p>
+                                <p style="color: var(--text);">Top ⬆️</p>
+                            </div>
+                            <div style="text-align: center; padding: 20px; background: rgba(0,255,65,0.03); border-radius: 10px;">
+                                <p style="color: var(--primary); font-size: 2em; font-weight: bold;">11</p>
+                                <p style="color: var(--text);">Rooms</p>
+                            </div>
+                        </div>
+                        <div style="text-align: center; margin-top: 30px;">
+                           <a href="https://github.com/Juanmaacosta1/ctf-writeups" target="_blank" 
+                                   style="color: var(--secondary); text-decoration: none; border-bottom: 1px dashed var(--secondary);">
+                                   repositorio de Github ↗
+                                </a>
+                            <p style="margin-top: 15px;">
+                                <a href="https://tryhackme.com/p/acostajuanma854" target="_blank" 
+                                   style="color: var(--secondary); text-decoration: none; border-bottom: 1px dashed var(--secondary);">
+                                   Ver perfil completo en TryHackMe ↗
+                                </a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <!-- ===== PROYECTOS MIOS ===== -->
+            <div style="margin-top: 50px;">
+                <h3>_proyectos_destacados</h3>
+                <div class="conta" style="margin-top: 30px;">
+                    
+                    <!-- Proyecto 1: Aplicación Flask con PostgreSQL POKEDEX -->
+                    <div class="servicio">
+                        <img src="../img/flask.png" alt="Flask + PostgreSQL" onerror="this.src='https://via.placeholder.com/300x200/0a0a0a/00ff41?text=Flask+App'">
+                        <div class="contenido-servicio">
+                            <h4>App Flask + PostgreSQL</h4>
+                            <p>Pokédex Web – Sistema de Gestión Pokémon Aplicación web desarrollada con Flask + PostgreSQL que funciona como una enciclopedia digital Pokémon. Permite visualizar, organizar y analizar información detallada de distintas especies junto a sus estadísticas.</p>
+                            <div style="margin-top: 15px;">
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">Python</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">Flask</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">PostgreSQL</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">pgAdmin</span>
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <a href="https://github.com/Juanmaacosta1/Pokedex" target="_blank" style="color: var(--primary);">Ver repositorio ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2: Puntero Interactivo para el Mouse -->
+                    <div class="servicio">
+                        <img src="../img/puntero.png" alt="Puntero JS" onerror="this.src='https://via.placeholder.com/300x200/0a0a0a/00b8ff?text=Puntero+JS'">
+                        <div class="contenido-servicio">
+                            <h4>🖱️ Puntero Interactivo para el Mouse</h4>
+                            <p>Efecto visual interactivo que modifica el comportamiento del cursor del mouse dentro de la página web, creando una experiencia dinámica y moderna para el usuario.</p>
+                            <div style="margin-top: 15px;">
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">HTML5</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">JS</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">CSS</span>
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <a href="https://github.com/Juanmaacosta1/puntero-para-el-mouse" target="_blank" style="color: var(--primary);">Ver repositorio ↗</a>
+                            </div>
+                            <div style="margin-top: 5px;">
+                                <a href="https://juanmaacosta1.github.io/puntero-para-el-mouse/" target="_blank" style="color: var(--primary);">Ver demo ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3: Reservas Online La Roka -->
+                    <div class="servicio">
+                        <img src="../img/roka.png" alt="La Roka Reservas" onerror="this.src='https://via.placeholder.com/300x200/0a0a0a/00ff41?text=La+Roka'">
+                        <div class="contenido-servicio">
+                            <h4>🍽️ La Roka – Sistema de Reservas Online</h4>
+                            <p>Permite a los clientes reservar una mesa de forma rápida desde el celular o computadora, sin llamadas ni complicaciones.</p>
+                            <div style="margin-top: 15px;">
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">HTML5</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">CSS3</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">API WhatsApp</span>
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <a href="https://github.com/Juanmaacosta1/la-roka-formulario" target="_blank" style="color: var(--primary);">Ver repositorio ↗</a>
+                            </div>
+                            <div style="margin-top: 5px;">
+                                <a href="https://la-roka-reservas.netlify.app/" target="_blank" style="color: var(--primary);">Ver sitio ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 4: Juego Pong -->
+                    <div class="servicio">
+                        <img src="../img/pong.jpg" alt="Juego Pong" onerror="this.src='https://via.placeholder.com/300x200/0a0a0a/00b8ff?text=Pong+Game'">
+                        <div class="contenido-servicio">
+                            <h4>🕹️ Pong – Juego Clásico</h4>
+                            <p>Recreación del clásico Pong desarrollada con JavaScript y HTML5. El jugador controla una paleta e intenta impedir que la pelota atraviese su lado mientras anota puntos contra su rival.</p>
+                            <div style="margin-top: 15px;">
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">HTML5</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">CSS3</span>
+                                <span style="background: rgba(0,255,65,0.1); padding: 3px 8px; border-radius: 5px; font-size: 0.8em;">JavaScript</span>
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <a href="https://github.com/Juanmaacosta1/pong" target="_blank" style="color: var(--primary);">Ver repositorio ↗</a>
+                            </div>
+                             <div style="margin-top: 5px;">
+                                <a href="https://juanmaacosta1.github.io/pong/" target="_blank" style="color: var(--primary);">Jugar ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- ===== REDES SOCIALES ===== -->
+            <h3 style="margin-top: 50px;">_redes</h3>
+            <div class="contenedor">
+                <div class="image-text-container">
+                    <img src="../img/github.png" alt="GitHub" onerror="this.src='https://github.githubassets.com/favicons/favicon.svg'">
+                    <div class="text-container">
+                        <p><a href="https://github.com/Juanmaacosta1" target="_blank">GitHub</a></p>
+                    </div>
+                </div>
+                <div class="image-text-container">
+                    <img src="../img/linke.png" alt="LinkedIn" onerror="this.src='https://static.licdn.com/sc/h/akt4ae504epesldzj74dzred8'">
+                    <div class="text-container">
+                        <p><a href="https://www.linkedin.com/in/juan-acosta-a304b1283/" target="_blank">LinkedIn</a></p>
+                    </div>
+                </div>
+                <div class="image-text-container">
+                    <img src="https://tryhackme.com/img/favicon.png" alt="TryHackMe" style="width: 50px; height: 50px; filter: invert(1);">
+                    <div class="text-container">
+                        <p><a href="https://tryhackme.com/p/acostajuanma854" target="_blank">TryHackMe</a></p>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </section>
 
     <footer>
         <h4>"Todos los derechos reservados © 2026 - Juan Manuel Acosta"</h4>
     </footer>
+
+    <script>
+        function verCertificado(certId) {
+            const urls = {
+                'cisco': 'https://www.credly.com/org/cisco',
+                'ja': 'https://juniorachievement.org.ar/'
+            };
+            
+            if(urls[certId]) {
+                window.open(urls[certId], '_blank');
+            } else {
+                alert('Vista previa del certificado');
+            }
+        }
+    </script>
 </body>
 </html>
